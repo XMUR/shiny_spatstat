@@ -1,8 +1,8 @@
 # shiny_spatstat
-User interfaces for for the R package spatstat.
+User interface for for the R package spatstat.
 Modular approach for interactive visualization of some summary statistics.
 
-To run the current user interface locally :
+To run the user interface locally :
 
 ```r
 shiny::runGitHub('marcosci/shiny_spatstat')
