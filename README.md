@@ -13,7 +13,7 @@ Access on web: [https://spatialrecology.shinyapps.io/shiny](https://spatialrecol
 
 ToDo:
 
-[] Load dynamically input files
-[] Progressbar for simulation runs
-[] More statistics
-[] Exchange base R plots with interactive plots
+- [] Load dynamically input files
+- [] Progressbar for simulation runs
+- [] More statistics
+- [] Exchange base R plots with interactive plots
