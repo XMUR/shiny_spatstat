@@ -1,7 +1,0 @@
-{
-    "installOptions" : {
-        "installDependencies" : true,
-        "installFromRepository" : true,
-        "libraryPath" : "/home/marco/Documents/spatstat/dist/shiny/packrat/lib/x86_64-pc-linux-gnu/3.2.1"
-    }
-}

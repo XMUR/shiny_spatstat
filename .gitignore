@@ -1,1 +1,4 @@
 packrat/lib*/
+rsconnect/
+.Rproj.user/
+*.Rproj
