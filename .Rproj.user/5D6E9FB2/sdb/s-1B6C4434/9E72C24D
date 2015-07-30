@@ -1,0 +1,17 @@
+{
+    "contents" : "library(spatstat)\nlibrary(rgdal)\nlibrary(rgeos)\nlibrary(ggmap)\n\n# load data\nattach(paracou)\npoint.data <- as.data.frame(paracou)\npoint.data[,1] <- round(point.data[,1], digits = 1)\n\nr            <- seq(from=0, to=50, by=0.5)\n\n### function for displaying text in in the UI\nmsgRunPrompt <- function( renderType=\"plot\", ... )\n{\n    #... allows other mtext params to be passed\n    msg <- \"Press the 'Run Statistics' button to see output here\"\n    \n    if (renderType==\"plot\")\n        mtext(msg, col='#a50026', ...)\n    else if (renderType==\"print\")\n        cat(msg)\n    else #text\n        msg\n}\n\ngeolocated_paracou <- geocode(\"Paracou Field Station, Sinnamary, Cayenne, French Guiana\")\ngeolocated_paracou <- SpatialPoints(geolocated_paracou)\npc100km <- gBuffer(geolocated_paracou, width=0.001, byid=TRUE )\nrandom_points <- spsample(pc100km, n=884, type=\"random\")\nrandom_points$marks <- paracou$marks\nrandom_points <- as.data.frame(random_points)\n\n",
+    "created" : 1438247233101.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2406145152",
+    "id" : "9E72C24D",
+    "lastKnownWriteTime" : 1438247934,
+    "path" : "~/Documents/spatstat/dist/shiny/global.R",
+    "project_path" : "global.R",
+    "properties" : {
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "type" : "r_source"
+}
