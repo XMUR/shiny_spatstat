@@ -179,7 +179,7 @@ shinyUI(navbarPage("SpatStat",theme = shinytheme("journal"),
                               tabPanel("Map",
                                        tabsetPanel(type = "tabs", 
                                                    tabPanel("Plot", leafletOutput('myMap', height=600)), 
-                                                   tabPanel("Theory", includeMarkdown("gest_theory.md"))
+                                                   tabPanel("Theory", includeMarkdown("leaflet.md"))
                                        )
                               ),
                               tabPanel("About",
