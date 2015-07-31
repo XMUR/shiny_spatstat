@@ -8,7 +8,6 @@ options(RCHART_LIB = 'nvd3')
 shinyUI(navbarPage("SpatStat",theme = shinytheme("journal"),
                    tabPanel("Overview",
                             navlistPanel(
-                                "Header",
                                 tabPanel("Scatterplot",
                                          tabsetPanel(type = "tabs", 
                                                      tabPanel("Plot", showOutput("chart1", lib="nvd3"),
